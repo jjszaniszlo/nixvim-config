@@ -1,0 +1,7 @@
+{
+  colorschemes = {
+    kanagawa = {
+      enable = true;
+    };
+  };
+}
