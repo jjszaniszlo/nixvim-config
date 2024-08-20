@@ -1,4 +1,4 @@
-{
+_: {
   plugins = {
     lsp = {
       enable = true;
