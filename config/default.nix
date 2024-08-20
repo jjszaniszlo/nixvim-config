@@ -1,5 +1,6 @@
 _: {
   imports = [ 
+    ./autocmds.nix
     ./mappings.nix
     ./options.nix
     ./plugins/base

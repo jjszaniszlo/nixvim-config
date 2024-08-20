@@ -38,68 +38,94 @@
     {
       key = "<leader>de";
       mode = "v";
-      action.__raw = ''require("dapui").eval'';
+      action.__raw = ''
+        function() require("dapui").eval() end
+      '';
       options.desc = "[Dap] Evaluate selected expression";
     }
     {
       mode = "n";
       key = "<Leader>du";
-      action.__raw = "require('dapui').toggle";
+      action.__raw = ''
+        function() require('dapui').toggle() end
+      '';
       options.desc = "Toggle Debugger UI";
     }
     {
       key = "<leader>b";
-      action.__raw = ''require("dap").toggle_breakpoint'';
+      action.__raw = ''
+        function() require("dap").toggle_breakpoint() end
+      '';
       options.desc = "[Dap] Toggle breakpoint";
     }
     {
       key = "<F5>";
-      action.__raw = ''lua require("dap").continue'';
+      action.__raw = ''
+        function() require("dap").continue() end
+      '';
       options.desc = "[Dap] Continue";
     }
     {
       key = "<F10>";
-      action.__raw = ''require("dap").step_into'';
+      action.__raw = ''
+        function() require("dap").step_into() end
+      '';
       options.desc = "[Dap] Step Into";
     }
     {
       key = "<F11>";
-      action.__raw = ''require("dap").step_over'';
+      action.__raw = ''
+        function() require("dap").step_over() end
+      '';
       options.desc = "[Dap] Step Over";
     }
     {
       key = "<F12>";
-      action.__raw = ''require("dap").step_out'';
+      action.__raw = ''
+        function() require("dap").step_out() end
+      '';
       options.desc = "[Dap] Step Out";
     }
     {
       key = "<leader>dr";
-      action.__raw = ''require("dap").repl_open'';
+      action.__raw = ''
+        function() require("dap").repl_open() end
+      '';
       options.desc = "[Dap] Open REPL";
     }
     {
       key = "<leader>dl";
-      action.__raw = ''require("dap").run_last'';
+      action.__raw = ''
+        function() require("dap").run_last() end
+      '';
       options.desc = "[Dap] Run Last";
     }
     {
       key = "<leader>dk";
-      action.__raw = ''require("dap.ui.widgets").hover'';
+      action.__raw = ''
+        function() require("dap.ui.widgets").hover() end
+      '';
       options.desc = "[Dap-Ui] Hover ";
     }
     {
       key = "<leader>dp";
-      action.__raw = ''require("dap.ui.widgets").preview'';
+      action.__raw = ''
+        function() require("dap.ui.widgets").preview() end
+      '';
       options.desc = "[Dap-Ui] Preview ";
     }
     {
       key = "<leader>df";
-      action.__raw = ''function() require("dap.ui.widgets").centered_float(require("dap.ui.widgets").frames) end'';
+      action.__raw = ''
+        function() require("dap.ui.widgets").centered_float(require("dap.ui.widgets").frames) end
+      '';
       options.desc = "[Dap-Ui] Toggle frames window ";
     }
     {
       key = "<leader>ds";
-      action.__raw = ''function() require("dap.ui.widgets").centered_float(require("dap.ui.widgets").scopes) end'';
+      action.__raw = ''
+        function() require("dap.ui.widgets").centered_float(require("dap.ui.widgets").scopes) end
+      '';
       options.desc = "[Dap-Ui] Toggle scopes window ";
     }
   ];
