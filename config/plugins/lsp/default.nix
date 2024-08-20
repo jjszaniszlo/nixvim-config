@@ -11,52 +11,36 @@
       keymaps = {
         silent = true;
         lspBuf = {
-          gd = {
-            action = "definition";
-            desc = "Goto Definition";
-          };
-          gr = {
-            action = "references";
-            desc = "Goto References";
-          };
           gD = {
+            action = "definition";
+            desc = "[LSP] Goto Definition";
+          };
+          gd = {
             action = "declaration";
-            desc = "Goto Declaration";
+            desc = "[LSP] Goto Declaration";
           };
           gi = {
             action = "implementation";
-            desc = "Goto Implementation";
-          };
-          gt = {
-            action = "type_definition";
-            desc = "Type Definition";
+            desc = "[LSP] Goto implementation";
           };
           K = {
             action = "hover";
-            desc = "Hover";
+            desc = "[LSP] Hover";
           };
-          "<leader>cw" = {
-            action = "workspace_symbol";
-            desc = "Workspace Symbol";
+          "<c-k" = {
+            action = "signature_help";
+            desc = "[LSP] Signature help";
           };
-          "<leader>cr" = {
+          "<leader>r" = {
             action = "rename";
-            desc = "Rename";
+            desc = "[LSP] Rename";
+          };
+          "<space>a" = {
+            action = "code_action";
+            desc = "[LSP] View code actions";
           };
         };
         diagnostic = {
-          "<leader>cd" = {
-            action = "open_float";
-            desc = "Line Diagnostics";
-          };
-          "[d" = {
-            action = "goto_next";
-            desc = "Next Diagnostic";
-          };
-          "]d" = {
-            action = "goto_prev";
-            desc = "Previous Diagnostic";
-          };
         };
       };
     };

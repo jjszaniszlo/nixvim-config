@@ -4,5 +4,6 @@ _: {
     ./plugins/lsp
     ./plugins/themes
     ./plugins/utils
+    ./plugins/base
   ];
 }
