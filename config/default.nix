@@ -4,6 +4,7 @@ _: {
     ./options.nix
     ./plugins/base
     ./plugins/cmp
+    ./plugins/dap
     ./plugins/lsp
     ./plugins/themes
     ./plugins/ui

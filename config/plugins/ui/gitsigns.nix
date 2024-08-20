@@ -1,5 +1,5 @@
 {
-  plugins.gitsigns-nvim = {
+  plugins.gitsigns = {
     enable = true;
   };
 }
