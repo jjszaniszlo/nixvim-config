@@ -1,0 +1,5 @@
+{
+  plugins.conform = {
+    enable = true;
+  };
+}
