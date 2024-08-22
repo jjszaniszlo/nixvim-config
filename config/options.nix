@@ -36,7 +36,6 @@
       foldlevelstart = 99;
       foldenable = true;
       undofile = true;
-      undodir = "/home/jjszaniszlo/.cache/nvim/undo";
       undolevels = 1000;
       undoreload = 10000;
       updatetime = 100;
