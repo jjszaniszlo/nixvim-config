@@ -7,6 +7,7 @@ _: {
         lua-ls.enable = true;
         nixd.enable = true;
         ols.enable = true;
+        rust-analyzer.enable = true;
       };
       keymaps = {
         silent = true;
