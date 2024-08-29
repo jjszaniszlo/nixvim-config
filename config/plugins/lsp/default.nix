@@ -7,7 +7,11 @@ _: {
         lua-ls.enable = true;
         nixd.enable = true;
         ols.enable = true;
-        rust-analyzer.enable = true;
+        rust-analyzer = {
+          enable = true;
+          installRustc = false;
+          installCargo = false;
+        };
       };
       keymaps = {
         silent = true;
