@@ -12,6 +12,7 @@ _: {
           installRustc = false;
           installCargo = false;
         };
+        dartls.enable = true;
       };
       keymaps = {
         silent = true;
