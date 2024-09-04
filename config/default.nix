@@ -7,6 +7,7 @@ _: {
     ./plugins/cmp
     ./plugins/dap
     ./plugins/lsp
+    ./plugins/neorg
     ./plugins/themes
     ./plugins/ui
     ./plugins/utils
