@@ -2,8 +2,6 @@ _: {
   plugins.neorg = {
     enable = true;
     lazyLoading = true;
-    modules = [
-      ./modules.nix
-    ];
+    modules = import ./modules.nix;
   };
 }
