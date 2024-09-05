@@ -20,7 +20,7 @@
           completeopt = "menu,menuone";
         };
         sources = [
-          { name = "[Neorg]"; }
+          { name = "neorg"; }
           { name = "git"; }
           { name = "emoji"; }
           { name = "nvim_lsp"; }

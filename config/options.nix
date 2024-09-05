@@ -1,7 +1,9 @@
-{pkgs, ...}: {
+{...}: {
   config = {
-    extraPackages = with pkgs; [
-      luajitPackages.lua-utils-nvim
+    extraLuaPackages = l: [
+      l.lua-utils-nvim
+      l.pathlib-nvim
+      l.plenary-nvim
     ];
     clipboard = {
       providers.wl-copy.enable = true;
