@@ -13,6 +13,10 @@ _: {
           installCargo = false;
         };
         dartls.enable = true;
+        hls = {
+          enable = true;
+          package = null;
+        };
       };
       keymaps = {
         silent = true;
