@@ -6,13 +6,18 @@ _: {
       servers = {
         lua-ls.enable = true;
         nixd.enable = true;
-        ols.enable = true;
+        ols = {
+          enable = true;
+          package = null;
+        };
         rust-analyzer = {
           enable = true;
-          installRustc = false;
-          installCargo = false;
+          package = null;
         };
-        dartls.enable = true;
+        dartls = {
+          enable = true;
+          package = null;
+        };
         hls = {
           enable = true;
           package = null;
