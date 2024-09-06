@@ -1,5 +1,10 @@
-{
+{...}: {
   config = {
+    extraLuaPackages = l: [
+      l.lua-utils-nvim
+      l.pathlib-nvim
+      l.plenary-nvim
+    ];
     clipboard = {
       providers.wl-copy.enable = true;
     };
