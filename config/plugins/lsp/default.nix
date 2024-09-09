@@ -13,6 +13,8 @@ _: {
         rust-analyzer = {
           enable = true;
           package = null;
+          installRustc = false;
+          installCargo = false;
         };
         dartls = {
           enable = true;
