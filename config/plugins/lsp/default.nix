@@ -4,6 +4,18 @@ _: {
       enable = true;
       inlayHints = true;
       servers = {
+        dartls = {
+          enable = true;
+          package = null;
+        };
+        hls = {
+          enable = true;
+          package = null;
+        };
+        java-language-server = {
+          enable = true;
+          package = null;
+        };
         lua-ls.enable = true;
         nixd.enable = true;
         ols = {
@@ -15,14 +27,6 @@ _: {
           package = null;
           installRustc = false;
           installCargo = false;
-        };
-        dartls = {
-          enable = true;
-          package = null;
-        };
-        hls = {
-          enable = true;
-          package = null;
         };
       };
       keymaps = {
