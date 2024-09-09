@@ -1,5 +1,8 @@
 _: {
-  imports = [./nabla.nix];
+  imports = [
+    ./nabla.nix
+    ./image.nix
+  ];
 
   plugins.neorg = {
     enable = true;
