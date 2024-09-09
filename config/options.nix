@@ -1,9 +1,13 @@
-{...}: {
+{pkgs, ...}: {
   config = {
+    extraPackages = with pkgs; [
+      imagemagick
+    ];
     extraLuaPackages = l: [
       l.lua-utils-nvim
       l.pathlib-nvim
       l.plenary-nvim
+      l.magick
     ];
     clipboard = {
       providers.wl-copy.enable = true;
