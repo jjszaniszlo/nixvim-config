@@ -12,7 +12,7 @@ _: {
           enable = true;
           package = null;
         };
-        java-language-server = {
+        jdt-language-server = {
           enable = true;
           package = null;
         };
