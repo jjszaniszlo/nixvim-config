@@ -117,5 +117,12 @@
       mode = "t";
       options.desc = "Terminal escape";
     }
+    {
+      key = "<leader>p";
+      action.__raw = ''
+        require("nabla").popup({border = "rounded"})
+      '';
+      options.desc = "Open nabla symbols";
+    }
   ];
 }
