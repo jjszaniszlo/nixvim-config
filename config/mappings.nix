@@ -120,7 +120,9 @@
     {
       key = "<leader>p";
       action.__raw = ''
-        require("nabla").popup({border = "rounded"})
+        function()
+          require("nabla").popup({border = "rounded"})
+        end
       '';
       options.desc = "Open nabla symbols";
     }
