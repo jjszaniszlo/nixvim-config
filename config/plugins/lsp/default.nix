@@ -4,6 +4,10 @@ _: {
       enable = true;
       inlayHints = true;
       servers = {
+        csharp-ls = {
+          enable = true;
+          package = null;
+        };
         dartls = {
           enable = true;
           package = null;
