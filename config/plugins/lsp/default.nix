@@ -4,28 +4,14 @@ _: {
       enable = true;
       inlayHints = true;
       servers = {
-        csharp-ls = {
-          enable = true;
-          package = null;
-        };
-        dartls = {
-          enable = true;
-          package = null;
-        };
-        hls = {
-          enable = true;
-          package = null;
-        };
-        jdt-language-server = {
-          enable = true;
-          package = null;
-        };
+        csharp-ls.enable = true;
+        dartls.enable = true;
+        hls.enable = true;
+        jdt-language-server.enable = true;
         lua-ls.enable = true;
         nixd.enable = true;
-        ols = {
-          enable = true;
-          package = null;
-        };
+        ols.enable = true;
+
         rust-analyzer = {
           enable = true;
           package = null;
