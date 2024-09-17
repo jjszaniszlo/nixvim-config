@@ -4,7 +4,7 @@ _: {
       enable = true;
       inlayHints = true;
       servers = {
-        csharp-ls.enable = true;
+        omnisharp.enable = true;
         dartls.enable = true;
         hls.enable = true;
         jdt-language-server.enable = true;
