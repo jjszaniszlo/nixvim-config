@@ -11,10 +11,10 @@ _: {
         lua-ls.enable = true;
         nixd.enable = true;
         ols.enable = true;
+        gopls.enable = true;
 
         rust-analyzer = {
           enable = true;
-          package = null;
           installRustc = false;
           installCargo = false;
         };
