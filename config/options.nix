@@ -48,6 +48,7 @@
       undolevels = 1000;
       undoreload = 10000;
       updatetime = 100;
+      exrc = true;
     };
   };
 }
