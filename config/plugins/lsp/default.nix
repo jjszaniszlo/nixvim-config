@@ -13,7 +13,11 @@ _: {
         nixd.enable = true;
         ols.enable = true;
         gopls.enable = true;
-        rust-analyzer.enable = true;
+        rust-analyzer = {
+          enable = true;
+          installRustc = true;
+          installCargo = true;
+        };
       };
       keymaps = {
         silent = true;
