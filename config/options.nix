@@ -2,6 +2,7 @@
   config = {
     extraPackages = with pkgs; [
       imagemagick
+      vimPlugins.editorconfig-nvim
     ];
     extraLuaPackages = l: [
       l.lua-utils-nvim

@@ -4,6 +4,7 @@ _: {
       enable = true;
       inlayHints = true;
       servers = {
+        clangd.enable = true;
         omnisharp.enable = true;
         dartls.enable = true;
         hls.enable = true;
@@ -12,12 +13,7 @@ _: {
         nixd.enable = true;
         ols.enable = true;
         gopls.enable = true;
-
-        rust-analyzer = {
-          enable = true;
-          installRustc = false;
-          installCargo = false;
-        };
+        rust-analyzer.enable = true;
       };
       keymaps = {
         silent = true;
