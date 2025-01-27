@@ -11,6 +11,11 @@
       action = ''<cmd>lua require("nvim-tree.api").tree.open()<cr>'';
       options = { desc = "[nvim-tree] Focus or open file tree"; };
     }
+    {
+      key = "<c-b>";
+      action = ''<cmd>lua require("nvim-tree.api").node.open.vertical()<cr>'';
+      options = { desc = "[nvim-tree] Focus or open file tree"; };
+    }
   ];
   extraConfigLua = ''
     require("nvim-tree").setup({
