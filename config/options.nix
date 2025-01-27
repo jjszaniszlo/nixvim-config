@@ -11,7 +11,7 @@
       l.magick
     ];
     clipboard = {
-      providers.wl-copy.enable = true;
+      register = "unnamedplus";
     };
     opts = { 
       number = true;
