@@ -7,16 +7,19 @@ _: {
         clangd.enable = true;
         omnisharp.enable = true;
         dartls.enable = true;
-        hls.enable = true;
-        jdt-language-server.enable = true;
-        lua-ls.enable = true;
+        hls = {
+          enable = true;
+          installGhc = false;
+        };
+        jdtls.enable = true;
+        lua_ls.enable = true;
         nixd.enable = true;
         ols.enable = true;
         gopls.enable = true;
-        rust-analyzer = {
+        rust_analyzer = {
           enable = true;
-          installRustc = true;
-          installCargo = true;
+          installRustc = false;
+          installCargo = false;
         };
       };
       keymaps = {

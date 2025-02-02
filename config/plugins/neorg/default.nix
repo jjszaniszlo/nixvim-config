@@ -6,6 +6,6 @@ _: {
 
   plugins.neorg = {
     enable = true;
-    modules = import ./modules.nix;
+    settings.load = import ./modules.nix;
   };
 }

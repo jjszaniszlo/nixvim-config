@@ -2,9 +2,6 @@
   plugins.nvim-tree = {
     enable = true;
   };
-  extraPlugins = with pkgs.vimPlugins; [
-    nvim-web-devicons
-  ];
   keymaps = [
     {
       key = "<leader>e";
