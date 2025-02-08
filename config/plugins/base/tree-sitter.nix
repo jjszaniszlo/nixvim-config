@@ -9,7 +9,7 @@
         use_languagetree = true;
       };
     };
-    folding = false;
+    folding = true;
     nixvimInjections = true;
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
   };

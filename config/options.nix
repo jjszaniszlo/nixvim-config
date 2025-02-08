@@ -45,7 +45,6 @@
       foldlevel = 99;
       foldlevelstart = 99;
       foldenable = true;
-      foldtext = "v:lua.vim.treesitter.foldtext()";
       undofile = true;
       undolevels = 1000;
       undoreload = 10000;
