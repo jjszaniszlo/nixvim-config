@@ -42,10 +42,11 @@
       clipboard = "unnamedplus";
       wrap = false;
       cursorline = true;
-      foldcolumn = "0";
+      foldcolumn = "1";
       foldlevel = 99;
       foldlevelstart = 99;
       foldenable = true;
+      fillchars = "eob:\ ,fold:\ ,foldopen:,foldsep:\ ,foldclose:";
       undofile = true;
       undolevels = 1000;
       undoreload = 10000;

@@ -1,9 +1,47 @@
 {
+
+  keymaps = [ 
+    {
+      key = "zR";
+      mode = "n";
+      action.__raw = ''require("ufo").openAllFolds'';
+      options.desc = "[UFO] Open all folds.";
+    }
+    {
+      key = "zM";
+      mode = "n";
+      action.__raw = ''require("ufo").closeAllFolds'';
+      options.desc = "[UFO] Close all folds.";
+    }
+    {
+      key = "zr";
+      mode = "n";
+      action.__raw = ''require("ufo").openFoldsExceptKinds'';
+      options.desc = "[UFO] Open folds except kinds.";
+    }
+    {
+      key = "zm";
+      mode = "n";
+      action.__raw = ''require("ufo").closeFoldsWith'';
+      options.desc = "[UFO] Open folds except kinds.";
+    }
+    {
+      key = "K";
+      mode = "n";
+      action.__raw = ''
+        function()
+            local winid = require('ufo').peekFoldedLinesUnderCursor()
+            if not winid then vim.lsp.buf.hover() end
+        end
+      '';
+      options.desc = "[UFO] Open folds except kinds.";
+    }
+  ];
   plugins.nvim-ufo = {
     enable = true;
     autoLoad = true;
-    setupLspCapabilities = true;
     settings = {
+      setupLspCapabilities = true;
       open_fold_hl_timeout = 150;
       close_fold_kinds_for_ft = {
         default = ["imports" "comment"];
@@ -24,6 +62,7 @@
             jumpBot = "]";
         };
       };
+      enable_get_fold_virt_text = true;
       fold_virt_handler = ''
         function(virtText, lnum, endLnum, width, truncate)
             local newVirtText = {}
@@ -53,11 +92,16 @@
             return newVirtText
         end
       '';
-      provider_selector = ``
-        function(bufnr, filetype, buftype)
-            return ftMap[filetype]
+      provider_selector = ''
+        function(bufnr, ft, buftype)
+          local ftMap = {
+            vim = "indent",
+            python = {"indent"},
+            git = "",
+          }
+          return ftMap[ft] or {'treesitter', 'indent'}
         end
-      ``;
+      '';
     };
   };
 }

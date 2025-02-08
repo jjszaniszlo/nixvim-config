@@ -31,6 +31,20 @@
           nvim = nixvimpkgs.makeNixvimWithModule nixvimModule;
         in
         {
+         _module.args.pkgs = import inputs.nixpkgs {
+            inherit system;
+            overlays = [
+              (final: prev: {
+                neovim-unwrapped = prev.sl.overrideAttrs (old: {
+                  patches = [
+                    ./overlays/patches/fold.patch
+                  ];
+                });
+              })
+            ];
+            config = { };
+          };
+
           checks = {
             default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
           };

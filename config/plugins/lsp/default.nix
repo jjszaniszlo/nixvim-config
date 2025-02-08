@@ -37,11 +37,11 @@ _: {
             action = "implementation";
             desc = "[LSP] Goto implementation";
           };
-          K = {
-            action = "hover";
-            desc = "[LSP] Hover";
-          };
-          "<c-k" = {
+          # K = {
+          #   action = "hover";
+          #   desc = "[LSP] Hover";
+          # };
+          "<c-k>" = {
             action = "signature_help";
             desc = "[LSP] Signature help";
           };
