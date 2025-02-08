@@ -15,7 +15,7 @@
     }
     {
       key = "<leader>n";
-      action = "noh";
+      action = ":noh<cr>";
       options.desc = "Disable highlighting";
     }
     {
