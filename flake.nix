@@ -35,7 +35,7 @@
             inherit system;
             overlays = [
               (final: prev: {
-                neovim-unwrapped = prev.sl.overrideAttrs (old: {
+                neovim-unwrapped = prev.neovim-unwrapped.overrideAttrs (old: {
                   patches = [
                     ./overlays/patches/fold.patch
                   ];
