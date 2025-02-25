@@ -21,6 +21,7 @@ _: {
           installRustc = false;
           installCargo = false;
         };
+        zls.enable = true;
       };
       keymaps = {
         silent = true;
