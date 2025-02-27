@@ -8,6 +8,8 @@
       "GitSignsAdd"
       "GitSignsChange"
       "GitSignsDelete"
+      "TelescopeBorder"
+      "TelescopeTitle"
     ];
   };
 }
