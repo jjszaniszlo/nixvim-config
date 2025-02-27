@@ -2,7 +2,7 @@
   colorschemes = {
     kanagawa = {
       enable = true;
-      settings.transparent = false;
+      settings.transparent = true;
     };
   };
 }
