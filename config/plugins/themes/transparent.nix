@@ -1,0 +1,5 @@
+{
+  plugins.transparent = {
+    enable = true;
+  };
+}
