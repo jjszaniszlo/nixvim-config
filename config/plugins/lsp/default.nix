@@ -22,6 +22,7 @@ _: {
           installCargo = false;
         };
         zls.enable = true;
+        ocamllsp.enable = true;
       };
       keymaps = {
         silent = true;
