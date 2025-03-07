@@ -22,7 +22,10 @@ _: {
           installCargo = false;
         };
         zls.enable = true;
-        ocamllsp.enable = true;
+        ocamllsp = {
+          enable = true;
+          package = null;
+        };
       };
       keymaps = {
         silent = true;
