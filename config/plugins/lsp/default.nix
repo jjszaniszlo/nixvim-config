@@ -22,7 +22,7 @@ _: {
           installCargo = false;
         };
         zls.enable = true;
-        ocamllsp = {
+        ocamlls = {
           enable = true;
           package = null;
         };
