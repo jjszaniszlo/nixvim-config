@@ -1,4 +1,7 @@
 _: {
+  imports = [
+    ./chatgpt.nix
+  ];
   plugins = {
     lsp = {
       enable = true;
