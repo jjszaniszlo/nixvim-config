@@ -2,7 +2,7 @@
   plugins.image = {
     enable = true;
     maxHeightWindowPercentage = 25;
-    integrations = {
+    settings.integrations = {
       neorg = {
         enabled = true;
         downloadRemoteImages = true;
