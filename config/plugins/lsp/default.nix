@@ -27,7 +27,7 @@ _: {
         zls.enable = true;
         ocamllsp = {
           enable = true;
-          package = null;
+          package = pkgs.ocamlPackages.ocaml-lsp;
         };
       };
       keymaps = {

@@ -1,6 +1,6 @@
 {
   plugins.image = {
-    enable = true;
+    enable = false;
     maxHeightWindowPercentage = 25;
     settings.integrations = {
       neorg = {
